@@ -4,25 +4,101 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find The Right Job For You!</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav align="center">
-        <a href="job.html">Find Jobs</a> |
-        <a href="companies.html">Companies</a> |
-        <a href="Courses.html">Courses</a> |
-        <a href="login.html">Login</a> |
-        <a href="register.html">Register</a>
+    <header class="site-header">
+      <div class="brand">Job Portal</div>
+      <nav>
+        <a href="job.html">Find Jobs</a>
+        <a href="companies.html">Companies</a>
+        <a href="Courses.html">Courses</a>
+        <a href="login.html">Login</a>
+        <a class="primary" href="register.html">Register</a>
       </nav>
-      <hr/>
-      <section>
-        <h1 align="center">Discover Your Perfect Career Opportunity</h1>
-        <p align="center">Browse through 800,000+ job openings across all industries</p>
-        <form align="center" action="/search" method="get">
-          <input align="center" type="search" placeholder="Search For Jobs" name="Search" />
-          <button align="center" type="submit">Search</button>
-        </form>
-      </section>
     </header>
+    <main class="page">
+      <section class="hero-split">
+        <div class="hero-copy">
+          <p class="eyebrow">Trusted by 4,500+ employers</p>
+          <h1>Discover Your Perfect Career Opportunity</h1>
+          <p>Browse through 800,000+ job openings across all industries and get matched in minutes.</p>
+          <form class="search-form" action="/search" method="get">
+            <input type="search" placeholder="Job title, company" name="Search" />
+            <select name="location">
+              <option value="">Location</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Pune">Pune</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Delhi">Delhi</option>
+            </select>
+            <select name="level">
+              <option value="">Experience</option>
+              <option value="Fresher">Fresher</option>
+              <option value="Mid">Mid</option>
+              <option value="Senior">Senior</option>
+            </select>
+            <button type="submit">Search Jobs</button>
+          </form>
+          <div class="quick-tags">
+            <span>Popular:</span>
+            <a href="#">React</a>
+            <a href="#">Java</a>
+            <a href="#">Data Science</a>
+            <a href="#">Cybersecurity</a>
+          </div>
+        </div>
+        <img class="page-hero" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop" alt="Team collaborating in an office" />
+      </section>
+      <section class="stats">
+        <div class="stat-card">
+          <h3>800,000+</h3>
+          <p>Open roles updated daily</p>
+        </div>
+        <div class="stat-card">
+          <h3>4,500+</h3>
+          <p>Partner companies hiring</p>
+        </div>
+        <div class="stat-card">
+          <h3>2.1M</h3>
+          <p>Career matches created</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Featured Jobs</h2>
+        <div class="grid">
+          <div class="job-card">
+            <div class="job-meta">
+              <span class="badge">Full-time</span>
+              <span class="badge ghost">Remote</span>
+            </div>
+            <h3>Senior Full Stack Developer</h3>
+            <p>TechCorp India · Bangalore</p>
+            <p class="salary">₹18 LPA - ₹25 LPA</p>
+            <button>Apply Now</button>
+          </div>
+          <div class="job-card">
+            <div class="job-meta">
+              <span class="badge">AI/ML</span>
+              <span class="badge ghost">Hybrid</span>
+            </div>
+            <h3>Machine Learning Engineer</h3>
+            <p>DataMind Solutions · Pune</p>
+            <p class="salary">₹16 LPA - ₹22 LPA</p>
+            <button>Apply Now</button>
+          </div>
+          <div class="job-card">
+            <div class="job-meta">
+              <span class="badge">Backend</span>
+              <span class="badge ghost">On-site</span>
+            </div>
+            <h3>Java Backend Developer</h3>
+            <p>FinanceHub · Mumbai</p>
+            <p class="salary">₹12 LPA - ₹18 LPA</p>
+            <button>Apply Now</button>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

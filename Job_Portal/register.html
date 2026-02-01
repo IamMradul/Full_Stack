@@ -4,31 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section>
-      <h1 align="center">Build Your Professional Profile</h1>
-      <p align="center">Join thousands of job seekers finding their ideal position</p>
-    </section>
-    <form  align="center" action="/register">
-      <input align="center" type="text" placeholder="Full Name" required />
-      <br />
-      <input align="center" type="email" placeholder="your.email@example.com" required />
-      <br />
-      <input align="center"
-        type="password"
-        placeholder="Create a strong password (minimum 8 characters)"
-        required
-      />
-      <br />
-      <input align="center" type="tel" placeholder="Mobile Number" required />
-      <br />
-      <select align="center" name="" id="" required>
-        <option value="Experienced">I have work experience</option>
-        <option value="Not Experienced">I'm a fresher</option>
-      </select>
-      <br />
-      <button align="center" type="submit">Submit</button>
-    </form>
+    <header class="site-header">
+      <div class="brand">Job Portal</div>
+      <nav>
+        <a href="Job_Portal.html">Home</a>
+        <a href="job.html">Jobs</a>
+        <a href="companies.html">Companies</a>
+        <a href="courses.html">Courses</a>
+        <a class="primary" href="login.html">Login</a>
+      </nav>
+    </header>
+    <main class="page">
+      <section class="auth-layout">
+        <div class="auth-copy">
+          <p class="eyebrow">Start your journey</p>
+          <h1>Build your professional profile</h1>
+          <p>Join thousands of job seekers finding their ideal position every day.</p>
+          <img class="page-hero" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop" alt="Teamwork and collaboration" />
+        </div>
+        <div class="form-card">
+          <form class="auth-form" action="/register">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" placeholder="Full Name" required />
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="your.email@example.com" required />
+            <label for="password">Password</label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Create a strong password (minimum 8 characters)"
+              required
+            />
+            <label for="phone">Mobile Number</label>
+            <input id="phone" type="tel" placeholder="Mobile Number" required />
+            <label for="experience">Experience Level</label>
+            <select name="experience" id="experience" required>
+              <option value="Experienced">I have work experience</option>
+              <option value="Not Experienced">I'm a fresher</option>
+            </select>
+            <button type="submit">Create Account</button>
+          </form>
+          <p class="helper">Already have an account? <a href="login.html">Sign in</a></p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

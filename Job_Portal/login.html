@@ -4,23 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 align="center" >Sign In to Your Account</h1>
-    <form action="/email" align="center" >
-      <label align="center" for="email">Email Address</label>
-      <input align="center" type="email" id="email" placeholder="your.email@example.com" required />
-      <br />
-      <label align="center" for="password">Password</label>
-      <input align="center"
-        type="password"
-        id="password"
-        placeholder="Enter your password"
-        required
-      />
-      <br />
-      <button align="center" type="submit">Sign In</button>
-    </form>
-    <h5 align="center" >Don't have an account? <a href="register.html">Register here</a></h5>
+    <header class="site-header">
+      <div class="brand">Job Portal</div>
+      <nav>
+        <a href="Job_Portal.html">Home</a>
+        <a href="job.html">Jobs</a>
+        <a href="companies.html">Companies</a>
+        <a href="courses.html">Courses</a>
+        <a class="primary" href="register.html">Register</a>
+      </nav>
+    </header>
+    <main class="page">
+      <section class="auth-layout">
+        <div class="auth-copy">
+          <p class="eyebrow">Welcome back</p>
+          <h1>Sign in to your account</h1>
+          <p>Access saved jobs, application history, and personalized recommendations.</p>
+          <img class="page-hero" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop" alt="Secure login on a laptop" />
+        </div>
+        <div class="form-card">
+          <form class="auth-form" action="/email" >
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="your.email@example.com" required />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+            <button type="submit">Sign In</button>
+          </form>
+          <p class="helper">Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

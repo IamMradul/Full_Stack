@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post_Job</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <h1 align="center">Post new Job</h1>
+    <form class="post_job">
+        <h1 for="post">Enter Post: </h1>
+        <input type="text" id="post" name="post" placeholder="Eg. Backend Developer" required>
+        <h1 for="name">Enter Company Name: </h1>
+        <input type="text" id="name" name="name" placeholder="Eg. Google" required>
+        <h2 for="location">Enter Job location: </h2>
+        <input type="text" id="location" name="location" placeholder="Eg. Banglore" required>
+        <p for="experience">Enter Job Experience in years: </p>
+        <input type="number" id="experience" name="experience" placeholder="Eg. 4 years" required>
+        <button type="submit">Send</button>
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <h1 align="center">Posted Jobs</h1>
+    <br>
+    <div id="New_posting">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

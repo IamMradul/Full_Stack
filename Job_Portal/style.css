@@ -316,6 +316,33 @@ input, select {
   gap: 8px;
 }
 
+#search_job {
+  max-width: 520px;
+  margin: 0 auto;
+  display: block;
+}
+
+#New_posting {
+  display: grid;
+  gap: 14px;
+}
+
+.job-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.job-actions .delete-btn {
+  background: var(--muted);
+  box-shadow: none;
+}
+
+.job-actions .delete-btn:hover {
+  background: var(--ink);
+}
+
 .job-meta {
   display: flex;
   gap: 8px;
